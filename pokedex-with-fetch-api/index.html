@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Pokedex 1 - ayudantía</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Pokemón (Tengo que atraparlos...)</h1>
+    <div class="container">
+        <div id="btn " type="button" class="btn btn-success btn__more" href="#">
+            Quiero ver más pokemones
+        </div>
+
+        <div id="btn_back" type="button" class="btn btn-info" href="#">
+            Quiero ver pokemones anterior <----
+        </div>
+
+        <div id="info" class="row" >
+        </div>
+        <div id='next-button'>
+        </div>
+    </div>
+
+
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Detalles del Pokemon</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            <img id="pokeImage" src="" style="width: 200px; height: 200px">
+            </div>
+            <div class="col-6">
+            <img id="pokeImageBack" src="" style="width: 200px; height: 200px">
+            </div>
+        </div>
+        <div class="modal-body">
+            <p id="url-pokemon-modal">Pokemon</p>
+            <h4>Habilidades:</h4>
+            <p id="abilityPokemon" class="erase-before-send"></p>
+            <h4>Tipo:</h4>
+            <p id="typePokemon" class="erase-before-send"></p>
+            <h4>Movimientos:</h4>
+            <p id="movePokemon" class="erase-before-send"></p>
+            <h4>Generaciones</h4>
+            <p id="generationPokemon" class="erase-before-send"></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
