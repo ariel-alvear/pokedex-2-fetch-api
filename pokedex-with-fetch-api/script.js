@@ -66,4 +66,18 @@ $(document).ready(function(){
             });
     }
     requestApi('https://pokeapi.co/api/v2/pokemon/');
+
+    function activeButton (){
+        $('#btn').click(function(){
+            $('#info').empty('.pokemon')
+            $('#pokeparagraph').remove()
+            requestApi(next_url)
+        });
+        $('#btn_back').click(function(){
+            $('#info').empty('.pokemon')
+            $('#pokeparagraph').remove()
+            requestApi(back_url)
+        });
+    };
+    activeButton()
 });
