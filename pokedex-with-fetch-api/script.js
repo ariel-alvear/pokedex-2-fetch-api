@@ -18,10 +18,10 @@ $(document).ready(function(){
                     </div>
                 </div>
                 </div>`
-            $('#info').append(details);
-            n = n + 1;
-            })
-            next_url = data.next
+                $('#info').append(details);
+                n = n + 1;
+                })
+                next_url = data.next
                 back_url = data.previous
                 if (back_url == null){
                     $('#btn_back').hide()
@@ -65,6 +65,8 @@ $(document).ready(function(){
                 });
             });
     }
+    var back_url
+    var next_url
     requestApi('https://pokeapi.co/api/v2/pokemon/');
 
     function activeButton (){
